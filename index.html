@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuración inicial usando html enter y seleccionando html5-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title> <!-- el titulo -->
+    <!-- Fuentes y estilos -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top"> <!--clase top para marcar la barra de arriba-->
+        <div class="nav">
+            <h1 class="nav-title">Dojonary</h1>
+            <input type="text" id="busquedaInput" placeholder="Search">
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <div class="container"><!--el contenedor de todo-->
+        <div class="row"><!--el contenedor de las columnas-->
+            <!--la columna izquierda-->
+            <div class="col-iz">
+                <div class="ninja1">
+                    <div class="card-body">
+                        <div class="parrafo1">
+                            <h1>Ninja</h1>
+                            <p>noun</p>
+                            <p>Plural: <span>ninjas</span></p>
+                            <button class="likebtn"> 13 Likes</button>
+                        </div>
+                        <div class="parrafo2">
+                            <p>A practitioner skilled in the <a href="#">Japanese </a>art of <a href="#">ninjuntsu</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ninja2">
+                    <div class="card-body">
+                        <div class="parrafo1">
+                            <h1>Ninja</h1>
+                            <p>noun</p>
+                            <p>Plural: <span>ninjas</span></p>
+                            <button class="likebtn"> 37 Likes</button>
+                        </div>
+                        <div class="parrafo2">
+                            <p>A <a href="#">Programmer</a> who breaks down problems with <a href="#">zen</a>-like focus
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- columna derecha -->
+            <div class="col-der">
+                <div class="ninja3">
+                    <div class="card-body">
+                        <div>
+                            <h2>Dojonary is defined by YOU</h2>
+                            <button class="defbtn">Add Definition</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--a partir de aqui es un intento de ventana emergente-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>This page says.</h3>
+            <p>Ninja was liked</p>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+    <script src="node.js"></script><!--el script va al final siempre antes de cerrar el body-->
+</body>
+
+</html>
